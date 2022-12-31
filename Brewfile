@@ -62,6 +62,7 @@ brew "vim"
 brew "zsh"
 brew "azure/functions/azure-functions-core-tools@3"
 
+cask "iterm2"
 cask "adoptopenjdk8"
 cask "alt-tab"
 cask "balance-lock"
