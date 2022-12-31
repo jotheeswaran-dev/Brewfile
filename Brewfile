@@ -81,6 +81,9 @@ cask "brave-browser"
 cask "spotify"
 cask "1password"
 cask "microsoft-remote-desktop"
+cask "microsoft-office"
+cask "slack"
+
 # cask 'microsoft-teams'
 
 # Heroku - in case we want to deploy using the heroku-cli
