@@ -78,8 +78,8 @@ cask "zoom"
 cask "google-chrome"
 cask "brave-browser"
 cask "spotify"
-
-# cask 'microsoft-remote-desktop'
+cask "1password"
+cask "microsoft-remote-desktop"
 # cask 'microsoft-teams'
 
 # Heroku - in case we want to deploy using the heroku-cli
