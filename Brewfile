@@ -83,6 +83,7 @@ cask "1password"
 cask "microsoft-remote-desktop"
 cask "microsoft-office"
 cask "slack"
+cask "postman"
 
 # cask 'microsoft-teams'
 
