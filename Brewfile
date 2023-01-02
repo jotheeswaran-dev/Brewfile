@@ -84,6 +84,7 @@ cask "microsoft-remote-desktop"
 cask "microsoft-office"
 cask "slack"
 cask "postman"
+cask "raycast"
 
 # cask 'microsoft-teams'
 
