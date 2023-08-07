@@ -88,6 +88,7 @@ cask "slack"
 cask "postman"
 cask "raycast"
 cask "todoist"
+cask "logi-options-plus"
 # cask 'microsoft-teams'
 
 # Heroku - in case we want to deploy using the heroku-cli
