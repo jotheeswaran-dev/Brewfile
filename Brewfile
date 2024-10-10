@@ -1,98 +1,115 @@
-# ~/Brewfile
-
-# This file is used along with the `brew bundle` command to ensure that required packages and apps are installed.
-# Also can be used to ensure that any package/apps that were installed as experimentation are uninstalled from the system.
-# If you are starting such a file on a machine where you have already installed some apps using brew, then use `brew bundle dump` to create this file and avoid starting from scratch
-
-# List all casks that are outdated (and which have version marked as 'latest')
-# alias bcg='brew outdated --greedy'
-
-# Upgrades all casks that are outdated (and which have version marked as 'latest')
-# alias bcug='brew upgrade --greedy'
-
-# Upgrades and cleans up all regular outdated casks and libs (non-greedy)
-# alias bupc='brew bundle check || brew bundle --all --cleanup; brew bundle cleanup --force; brew cleanup --prune=all; brew upgrade'
-
-# Note: Not yet found casks for the following:
-# https://www.cockos.com/licecap/
-
-# set arguments for all 'brew cask install' commands
-cask_args appdir: '/Applications'
-
 tap "adoptopenjdk/openjdk"
 tap "azure/functions"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
+brew "jpeg-xl"
 brew "autoconf"
+brew "python@3.12"
 brew "awscli"
-brew "guile"
+brew "glib"
 brew "libidn2"
 brew "p11-kit"
 brew "unbound"
 brew "gnutls"
 brew "emacs"
 brew "cask"
-brew "glib"
 brew "libssh"
 brew "qemu"
 brew "lima"
 brew "colima"
-brew "openldap"
 brew "curl"
 brew "docker"
 brew "docker-compose"
 brew "freetds"
 brew "gimme-aws-creds"
 brew "git"
+brew "gnupg"
+brew "guile"
+brew "node"
+brew "http-server"
+brew "kcat"
+brew "lftp"
 brew "libfido2"
 brew "libpq"
-brew "mysql", restart_service: true
+brew "maven"
+brew "mysql"
 brew "nghttp2"
 brew "openjdk@11"
+brew "openldap"
 brew "php"
-brew "php@7.4", restart_service: true
+brew "poetry"
 brew "postgresql@14"
-brew "python@3.9", link: false
+brew "pyenv"
+brew "python@3.10"
+brew "python@3.11"
+brew "python@3.9"
+brew "rust"
 brew "saml2aws"
 brew "talisman"
 brew "terraform"
 brew "vim"
+brew "yazi"
 brew "zsh"
-brew "azure/functions/azure-functions-core-tools@3"
-
-cask "iterm2"
-cask "adoptopenjdk8"
-cask "alt-tab"
-cask "balance-lock"
-cask "google-cloud-sdk"
-cask "visual-studio-code"
-cask "intellij-idea-ce"
-cask "insomnia"
-cask "laravel-kit"
-cask "ngrok"
-cask "rancher"
-cask "rectangle"
-cask "tableplus"
-cask "warp"
-cask "xampp-vm"
-cask "zoom"
-cask "google-chrome"
-cask "brave-browser"
-cask "spotify"
-cask "1password"
-cask "1password-cli"
-cask "microsoft-remote-desktop"
-cask "microsoft-office"
-cask "slack"
-cask "postman"
-cask "raycast"
-cask "todoist"
-cask "logi-options-plus"
-# cask 'microsoft-teams'
-
-# Heroku - in case we want to deploy using the heroku-cli
-# tap 'heroku/brew'
-# brew 'heroku'
-
+cask "1password", args: { appdir: "/Applications" }
+cask "1password-cli", args: { appdir: "/Applications" }
+cask "alt-tab", args: { appdir: "/Applications" }
+cask "arc"
+cask "aws-vpn-client"
+cask "balance-lock", args: { appdir: "/Applications" }
+cask "brave-browser", args: { appdir: "/Applications" }
+cask "google-chrome", args: { appdir: "/Applications" }
+cask "google-cloud-sdk", args: { appdir: "/Applications" }
+cask "insomnia", args: { appdir: "/Applications" }
+cask "intellij-idea-ce", args: { appdir: "/Applications" }
+cask "iterm2", args: { appdir: "/Applications" }
+cask "laravel-kit", args: { appdir: "/Applications" }
+cask "logi-options+", args: { appdir: "/Applications" }
+cask "microsoft-auto-update"
+cask "microsoft-office", args: { appdir: "/Applications" }
+cask "microsoft-remote-desktop", args: { appdir: "/Applications" }
+cask "microsoft-teams"
+cask "ngrok", args: { appdir: "/Applications" }
+cask "pgadmin4"
+cask "postman", args: { appdir: "/Applications" }
+cask "pycharm-ce"
+cask "rancher", args: { appdir: "/Applications" }
+cask "raycast", args: { appdir: "/Applications" }
+cask "rectangle", args: { appdir: "/Applications" }
+cask "slack", args: { appdir: "/Applications" }
+cask "spotify", args: { appdir: "/Applications" }
+cask "tableplus", args: { appdir: "/Applications" }
+cask "todoist", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "warp", args: { appdir: "/Applications" }
+cask "xampp-vm", args: { appdir: "/Applications" }
+cask "zoom", args: { appdir: "/Applications" }
+vscode "alefragnani.project-manager"
+vscode "codezombiech.gitignore"
+vscode "donjayamanne.git-extension-pack"
+vscode "donjayamanne.githistory"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "hashicorp.terraform"
+vscode "hbenl.vscode-test-explorer"
+vscode "kevinrose.vsc-python-indent"
+vscode "kreativ-software.csharpextensions"
+vscode "meezilla.json"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.csdevkit"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-ossdata.vscode-postgresql"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vscode.test-adapter-converter"
+vscode "postman.postman-for-vscode"
+vscode "qwtel.sqlite-viewer"
+vscode "rangav.vscode-thunder-client"
+vscode "redhat.vscode-xml"
+vscode "vscode-icons-team.vscode-icons"
+vscode "vscodevim.vim"
+vscode "yuvraj.json-scape-unscape"
+vscode "zainchen.json"
+vscode "ziyasal.vscode-open-in-github"
